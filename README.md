@@ -31,5 +31,6 @@ Key Functionalities
    Category-based product filtering
    Cart management
    Order confirmation workflow
-
+The UI design of this project is based on a pre-built template source.
+The template was customized and integrated into the application and the whole backend was implemented by me.
 Separate WCF-based payment service available here:git@github.com:aathirabrajan101/WCFService_ASP_Project.git
