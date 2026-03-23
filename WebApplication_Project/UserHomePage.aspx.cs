@@ -20,6 +20,7 @@ namespace WebApplication_Project
                 DataTable dt = ob.Fun_ExDataTable(dl);
                 DataList1.DataSource = dt;
                 DataList1.DataBind();
+                
             }
         }
 
@@ -28,7 +29,11 @@ namespace WebApplication_Project
             int getid = Convert.ToInt32(e.CommandArgument); //to get the corresponding Cat_Id which set as command argument
             string sel = "select * from ProductTab where Cat_Id=" + getid + "";
             Session["cid"] = getid;  //category ID
+            string Cname = "select Cat_Name from CategoryTab where Cat_Id=" + getid + "";
+            string cc = ob.Fun_ExScalar(Cname).ToString();
+            Session["cname"] = cc;
             Response.Redirect("ViewAllProducts.aspx");
+          
         }
 
         protected void Button1_Click(object sender, EventArgs e)

@@ -15,6 +15,8 @@ namespace WebApplication_Project
         {
             if (!IsPostBack)
             {
+
+                Label4.Text = Session["cname"].ToString();
                 string dl = "select* from ProductTab where Pro_Status='Available' and Cat_Id='"+Session["cid"]+"'";
                 DataTable dt = ob.Fun_ExDataTable(dl);
                 DataList1.DataSource = dt;

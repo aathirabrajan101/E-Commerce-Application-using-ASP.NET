@@ -28,10 +28,12 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color:antiquewhite">
     <form id="form1" runat="server">
-    <body style="background-color:antiquewhite">
-  <h1>Add Product Details</h1>
+    
+  <h1>
+      <asp:Label ID="Label9" runat="server" BorderColor="#33CCFF" BorderStyle="Inset" Font-Names="Arial" ForeColor="#006666" Text="Add product Details"></asp:Label>
+        </h1>
         <table class="auto-style1">
             <tr>
                 <td class="auto-style5"></td>
@@ -49,7 +51,7 @@
             </tr>
             <tr>
                 <td class="auto-style6">
-                    <asp:Label ID="Label2" runat="server" Font-Bold="True" Text="Category Name"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Category Name" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                 </td>
                 <td class="auto-style4">
                     <asp:DropDownList ID="DropDownList2" runat="server">
@@ -70,7 +72,7 @@
             </tr>
             <tr>
                 <td class="auto-style6">
-                    <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Product Name"></asp:Label>
+                        <asp:Label ID="Label10" runat="server" Font-Bold="True" Text="Product Name" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                 </td>
                 <td class="auto-style4">
                     <asp:TextBox ID="tbname" runat="server"></asp:TextBox>
@@ -90,7 +92,7 @@
             </tr>
             <tr>
                 <td class="auto-style6">
-                    <asp:Label ID="Label4" runat="server" Font-Bold="True" Text="Product Image"></asp:Label>
+                        <asp:Label ID="Label11" runat="server" Font-Bold="True" Text="Product Image" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                 </td>
                 <td class="auto-style4">
                     <asp:FileUpload ID="FileUpload1" runat="server" />
@@ -110,7 +112,7 @@
             </tr>
             <tr>
                 <td class="auto-style6">
-                    <asp:Label ID="Label5" runat="server" Font-Bold="True" Text="Product Description"></asp:Label>
+                        <asp:Label ID="Label12" runat="server" Font-Bold="True" Text="Product Description" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                 </td>
                 <td class="auto-style4">
                     <asp:TextBox ID="tbdesc" runat="server" TextMode="MultiLine"></asp:TextBox>
@@ -130,7 +132,7 @@
             </tr>
             <tr>
                 <td class="auto-style6">
-                    <asp:Label ID="Label6" runat="server" Font-Bold="True" Text="Product Price"></asp:Label>
+                        <asp:Label ID="Label13" runat="server" Font-Bold="True" Text="Product Price" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                 </td>
                 <td class="auto-style4">
                     <asp:TextBox ID="tbprice" runat="server"></asp:TextBox>
@@ -150,7 +152,7 @@
             </tr>
             <tr>
                 <td class="auto-style6">
-                    <asp:Label ID="Label7" runat="server" Font-Bold="True" Text="Product Stock"></asp:Label>
+                        <asp:Label ID="Label14" runat="server" Font-Bold="True" Text="Product Stock" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                 </td>
                 <td class="auto-style4">
                     <asp:TextBox ID="tbstock" runat="server" TextMode="Number"></asp:TextBox>
@@ -231,7 +233,7 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
-</body>
+
         <div>
         </div>
     </form>

@@ -20,7 +20,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <body style="background-color:azure">
+   <body>
         <table class="w-100">
         <tr>
             <td>&nbsp;</td>
@@ -32,7 +32,9 @@
         <tr>
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;</td>
-            <td>&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#000066" Text="Label"></asp:Label>
+                &nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

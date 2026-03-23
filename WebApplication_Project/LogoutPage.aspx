@@ -2,26 +2,26 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            width: 340px;
+            width: 460px;
         }
         .auto-style2 {
             width: 308px;
         }
         .auto-style3 {
-            width: 340px;
-            height: 79px;
+            width: 460px;
+            height: 57px;
         }
         .auto-style4 {
             width: 308px;
-            height: 79px;
+            height: 57px;
         }
         .auto-style5 {
-            height: 79px;
+            height: 57px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <body style="background-color:wheat">
+    <body>
         <table class="w-100">
         <tr>
             <td class="auto-style1">&nbsp;</td>
@@ -40,8 +40,9 @@
         <tr>
             <td class="auto-style1">&nbsp;</td>
             <td class="auto-style2">
+                &nbsp;&nbsp;
                 <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#000066" Text="Are you sure to Logout?"></asp:Label>
-            </td>
+                &nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

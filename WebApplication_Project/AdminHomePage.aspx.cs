@@ -23,5 +23,10 @@ namespace WebApplication_Project //ADMIN HOME PAGE
         {
             Response.Redirect("UseraManagementbyAd.aspx");
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LogoutPage.aspx");
+        }
     }
 }

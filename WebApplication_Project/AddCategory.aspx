@@ -40,10 +40,12 @@
     </style>
 </head>
 <body>
-    <body style="background-color:antiquewhite">
-  <h1>Add Category Details</h1>
-</body>
     <form id="form1" runat="server">
+    <body style="background-color:antiquewhite">
+  <h1>
+      <asp:Label ID="Label5" runat="server" BorderColor="#33CCFF" BorderStyle="Inset" Font-Names="Arial" ForeColor="#006666" Text="Add Category Details"></asp:Label>
+        </h1>
+</body>
         <div>
             <table class="auto-style1">
                 <tr>
@@ -54,7 +56,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Category Name"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Category Name" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                     </td>
                     <td class="auto-style8">
                         <asp:TextBox ID="tbname" runat="server"></asp:TextBox>
@@ -72,7 +74,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:Label ID="Label2" runat="server" Font-Bold="True" Text="Category Description"></asp:Label>
+                        <asp:Label ID="Label6" runat="server" Font-Bold="True" Text="Category Description" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                     </td>
                     <td class="auto-style8">
                         <asp:TextBox ID="tbdesc" runat="server" TextMode="MultiLine"></asp:TextBox>
@@ -83,14 +85,14 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style3"></td>
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Category Image"></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Font-Bold="True" Text="Category Image" Font-Names="Arial" ForeColor="#663300"></asp:Label>
                     </td>
                     <td class="auto-style8">
                         <asp:FileUpload ID="FileUpload1" runat="server" />

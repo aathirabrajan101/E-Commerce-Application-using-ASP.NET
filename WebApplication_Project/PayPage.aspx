@@ -11,8 +11,8 @@
         width: 484px;
     }
     .auto-style4 {
-        width: 7px;
-    }
+            width: 70px;
+        }
     .auto-style5 {
         width: 39px;
     }
@@ -48,7 +48,7 @@
         height: 30px;
     }
     .auto-style16 {
-        width: 7px;
+        width: 70px;
         height: 30px;
     }
     .auto-style17 {
@@ -72,7 +72,8 @@
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table class="w-100">
+    <body>
+        <table class="w-100">
     <tr>
         <td class="auto-style5">&nbsp;</td>
         <td class="auto-style4">&nbsp;</td>
@@ -385,4 +386,5 @@
         <td>&nbsp;</td>
     </tr>
 </table>
+    </body>
 </asp:Content>

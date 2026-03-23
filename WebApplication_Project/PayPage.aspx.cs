@@ -112,26 +112,23 @@ namespace WebApplication_Project
                         int balstock = stock - quant;
                         string upstock = "update ProductTab set Pro_Stock=" + balstock + " where Pro_Id=" + pid + "";
                         int up1 = ob.Fun_ExNonQuer(upstock);
-                        string uporder = "update OrderTab set order_status='paid'where User_Id=" + Session["userid"] + " and Order_status='Ordered'";
+                        string uporder = "update OrderTab set order_status='paid'where User_Id=" + Session["userid"] + " and Order_status='Ordered' and Pro_Id=" + pid + "";
                         int up2 = ob.Fun_ExNonQuer(uporder);
-                        if (up1 == 1 && up2 == 1)
-                        {
-                            string upbillstat = "update Billtab set Bill_Status=0 where User_Id= " + Session["userid"] + " and Bill_Status=1";
-                            int b = ob.Fun_ExNonQuer(upbillstat);
-                            if (b == 1)
-                            {
-                                Label11.Visible = true;
-                                Label11.Text = "Payment Successfull";
-                                Button6.Visible = true; //feedback button
-                                Button5.Enabled = false; //pay button disabled after payment
-                            }
-                            else
-                            {
-                                Label11.Visible = true;
-                                Label11.Text = "Payment Unsuccessful";
-                            }
-                        }
 
+                    }
+                    string upbillstat = "update Billtab set Bill_Status=0 where User_Id= " + Session["userid"] + " and Bill_Status=1";
+                    int b = ob.Fun_ExNonQuer(upbillstat);
+                    if (b == 1)
+                    {
+                        Label11.Visible = true;
+                        Label11.Text = "Payment Successfull";
+                        Button6.Visible = true; //feedback button
+                        Button5.Enabled = false; //pay button disabled after payment
+                    }
+                    else
+                    {
+                        Label11.Visible = true;
+                        Label11.Text = "Payment Unsuccessful";
                     }
                 }
             }

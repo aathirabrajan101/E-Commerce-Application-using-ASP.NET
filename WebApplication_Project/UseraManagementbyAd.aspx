@@ -30,7 +30,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2" colspan="3">&nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="Label1" runat="server" BorderColor="#3333CC" BorderStyle="Ridge" Font-Bold="True" Font-Size="X-Large" Height="28px" Text="User Management" Width="234px"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" BorderColor="#33CC33" BorderStyle="Inset" Font-Bold="True" Font-Size="X-Large" Height="28px" Text="User Management" Width="234px" ForeColor="#006666"></asp:Label>
                         &nbsp;</td>
                     <td class="auto-style4"></td>
                     <td class="auto-style2"></td>
@@ -46,6 +46,7 @@
                     <td class="auto-style6">&nbsp;</td>
                     <td>
                         <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#990033" Text="Active Users"></asp:Label>
+                        <br />
                     </td>
                     <td>&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
@@ -84,6 +85,7 @@
                     <td class="auto-style6">&nbsp;</td>
                     <td>
                         <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#990033" Text="Blocked Users"></asp:Label>
+                        <br />
                     </td>
                     <td>&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
@@ -92,7 +94,7 @@
                 <tr>
                     <td class="auto-style6">&nbsp;</td>
                     <td>
-                        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BorderColor="#003300" BorderWidth="3px" Height="195px" Width="509px">
+                        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BorderColor="#003300" BorderWidth="3px" Height="194px" Width="548px">
                             <Columns>
                                 <asp:BoundField DataField="User_Id" HeaderText="User ID" />
                                 <asp:BoundField DataField="User_Name" HeaderText="Name" />

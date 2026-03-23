@@ -44,7 +44,7 @@
         <tr>
             <td class="auto-style1">&nbsp;</td>
             <td>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Height="211px" Width="543px">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Height="211px" Width="543px" BackColor="#FFFFCC" BorderColor="#993366" BorderStyle="Inset">
                     <Columns>
                         <asp:BoundField DataField="Fb_Id" HeaderText="Feedback Id" />
                         <asp:BoundField DataField="User_Id" HeaderText="User Id" />

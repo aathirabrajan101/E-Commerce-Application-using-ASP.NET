@@ -2,13 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            width: 68px;
+            width: 104px;
         }
         .auto-style3 {
             width: 150px;
         }
         .auto-style4 {
-            width: 68px;
+            width: 104px;
             height: 30px;
         }
         .auto-style7 {
@@ -28,7 +28,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   
-    <body style="background-color:bisque">
+    <body>
         <table class="w-100">
         <tr>
             <td class="auto-style1">&nbsp;</td>

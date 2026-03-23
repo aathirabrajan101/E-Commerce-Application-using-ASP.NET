@@ -13,28 +13,17 @@
             width: 28px;
         }
         .auto-style3 {
-            width: 442px;
+            width: 403px;
         }
-        .auto-style4 {
-            height: 23px;
-        }
-        .auto-style5 {
-            width: 313px;
-        }
-        .auto-style6 {
-            height: 23px;
-            width: 313px;
+        .auto-style9 {
+            width: 1543%;
+            height: 436px;
         }
         .auto-style7 {
             width: 236px;
         }
-        .auto-style8 {
-            height: 23px;
-            width: 236px;
-        }
-        .auto-style9 {
-            width: 87%;
-            height: 436px;
+        .auto-style5 {
+            width: 313px;
         }
         .auto-style10 {
             width: 236px;
@@ -47,41 +36,30 @@
         .auto-style12 {
             height: 133px;
         }
-    </style>
+        .auto-style8 {
+            height: 23px;
+            width: 236px;
+        }
+        .auto-style6 {
+            height: 23px;
+            width: 313px;
+        }
+        .auto-style4 {
+            height: 23px;
+        }
+        </style>
 </head>
 <body>
-    <body style="background-color:antiquewhite">
-  <h1>Edit Category Details</h1>
-</body>
     <form id="form1" runat="server">
+    <body style="background-color:antiquewhite">
+  <h1>
+      <asp:Label ID="Label9" runat="server" BorderColor="#006666" BorderStyle="Inset" Font-Names="Arial" Text="Edit Category Details"></asp:Label>
+        </h1>
+</body>
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">
-                        <asp:GridView ID="GridView1" runat="server" Height="156px" Width="414px" AutoGenerateColumns="False">
-                            <Columns>
-                                <asp:BoundField DataField="Cat_Name" HeaderText="Category Name" />
-                                <asp:BoundField DataField="Cat_Description" HeaderText="Category Description" />
-                                <asp:ImageField DataImageUrlField="Cat_Image" HeaderText="Category Image">
-                                    <ControlStyle Height="100px" Width="100px" />
-                                </asp:ImageField>
-                                <asp:TemplateField HeaderText="Edit Details">
-                                    <ItemTemplate>
-                                        <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("Cat_Id") %>' OnCommand="LinkButton1_Command1">View and Edit</asp:LinkButton>
-                                    </ItemTemplate>
-                                </asp:TemplateField>
-                            </Columns>
-                        </asp:GridView>
-                    </td>
-                    <td>
+                    <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Panel ID="Panel1" runat="server" Visible="False">
                             <table class="auto-style9">
                                 <tr>
@@ -171,9 +149,36 @@
                                 </tr>
                             </table>
                         </asp:Panel>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:GridView ID="GridView1" runat="server" Height="264px" Width="608px" AutoGenerateColumns="False" BorderColor="#006666" BorderStyle="Solid" BorderWidth="3px">
+                            <Columns>
+                                <asp:BoundField DataField="Cat_Name" HeaderText="Category Name" />
+                                <asp:BoundField DataField="Cat_Description" HeaderText="Category Description" />
+                                <asp:ImageField DataImageUrlField="Cat_Image" HeaderText="Category Image">
+                                    <ControlStyle Height="100px" Width="100px" />
+                                </asp:ImageField>
+                                <asp:TemplateField HeaderText="Edit Details">
+                                    <ItemTemplate>
+                                        <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("Cat_Id") %>' OnCommand="LinkButton1_Command1">View and Edit</asp:LinkButton>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+                        </asp:GridView>
                     </td>
+                    <td class="auto-style3">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
                     <td>
                         <asp:HiddenField ID="HFCatImage" runat="server"  />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </td>
                     <td>&nbsp;</td>
                 </tr>

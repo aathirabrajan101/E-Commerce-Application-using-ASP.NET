@@ -22,9 +22,6 @@
         .auto-style9 {
             height: 55px;
         }
-        .auto-style10 {
-            margin-top: 0px;
-        }
         .auto-style11 {
             margin-left: 41px;
         }
@@ -33,39 +30,49 @@
             height: 580px;
         }
         .auto-style13 {
-            width: 469px;
+            width: 404px;
         }
-    </style>
+        .auto-style14 {
+            width: 496px;
+        }
+        .auto-style10 {
+            margin-top: 0px;
+            height: 279px;
+            width: 630px;
+            margin-right: 53px;
+        }
+        .auto-style15 {
+            margin-top: 0px;
+            margin-right: 53px;
+        }
+        </style>
 </head>
 <body>
-    <body style="background-color:antiquewhite">
-  <h1>Edit Product Details</h1>
-</body>
     <form id="form1" runat="server">
+    <body style="background-color:antiquewhite">
+  <h1>
+      <asp:Label ID="Label9" runat="server" BorderColor="#33CCFF" BorderStyle="Inset" Font-Names="Arial" ForeColor="#006666" Text="Edit Product Details"></asp:Label>
+        </h1>
+</body>
         <div>
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">
-                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Height="66px" Width="547px" CssClass="auto-style10">
-                            <Columns>
-                                <asp:BoundField DataField="Pro_Name" HeaderText="Product Name" />
-                                <asp:BoundField DataField="Pro_Description" HeaderText="Product Description" />
-                                <asp:ImageField DataImageUrlField="Pro_Image" HeaderText="Product Image">
-                                    <ControlStyle Height="100px" Width="100px" />
-                                </asp:ImageField>
-                                <asp:BoundField DataField="Pro_Price" HeaderText="Product Price" />
-                                <asp:BoundField DataField="Pro_Stock" HeaderText="Product Stock" />
-                                <asp:BoundField DataField="Pro_Status" HeaderText="Product Status" />
-                                <asp:TemplateField HeaderText="Edit Details">
-                                    <ItemTemplate>
-                                        <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("Pro_Id") %>' OnCommand="LinkButton1_Command">View and Edit</asp:LinkButton>
-                                    </ItemTemplate>
-                                </asp:TemplateField>
-                            </Columns>
-                        </asp:GridView>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style13">
-                        <asp:Panel ID="Panel1" runat="server" Visible="False" CssClass="auto-style11" Height="581px" Width="469px">
+                        &nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                            &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style14">&nbsp;</td>
+                                <td>
+                        <asp:Panel ID="Panel1" runat="server" Visible="False" CssClass="auto-style11" Height="581px" Width="621px">
                             <table class="auto-style12">
                                 <tr>
                                     <td class="auto-style7">&nbsp;</td>
@@ -142,14 +149,33 @@
                                 </tr>
                             </table>
                         </asp:Panel>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style14">&nbsp;</td>
+                                <td>
+                                    <br />
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Height="144px" Width="647px" CssClass="auto-style15" BorderColor="#006666" BorderStyle="Solid" BorderWidth="3px">
+                            <Columns>
+                                <asp:BoundField DataField="Pro_Name" HeaderText="Product Name" />
+                                <asp:BoundField DataField="Pro_Description" HeaderText="Product Description" />
+                                <asp:ImageField DataImageUrlField="Pro_Image" HeaderText="Product Image">
+                                    <ControlStyle Height="100px" Width="100px" />
+                                </asp:ImageField>
+                                <asp:BoundField DataField="Pro_Price" HeaderText="Product Price" />
+                                <asp:BoundField DataField="Pro_Stock" HeaderText="Product Stock" />
+                                <asp:BoundField DataField="Pro_Status" HeaderText="Product Status" />
+                                <asp:TemplateField HeaderText="Edit Details">
+                                    <ItemTemplate>
+                                        <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("Pro_Id") %>' OnCommand="LinkButton1_Command">View and Edit</asp:LinkButton>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+                        </asp:GridView>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>
-                            &nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style13">
                         <br />
                         <br />
@@ -160,11 +186,16 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
                     <td class="auto-style2">
                         <asp:HiddenField ID="HfProImage" runat="server" />
+                    &nbsp;&nbsp;&nbsp;
                     </td>
                    
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
